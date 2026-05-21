@@ -11,7 +11,6 @@ import { Contact } from "@/components/portfolio/Contact";
 export const Route = createFileRoute("/")({
   component: Index,
 
-  // 👇 this is what makes loading actually visible
   loader: async () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     return {};
@@ -25,33 +24,31 @@ export const Route = createFileRoute("/")({
 
   head: () => ({
     meta: [
-        { title: "MYHB | Data Science Portfolio" },
+      { title: "MYHB | Data Science Portfolio" },
+      {
+        name: "description",
+        content:
+          "Mathematics student building machine learning projects, AI systems, and data-driven web apps.",
+      },
+      { name: "author", content: "MYHB" },
 
-    {
-    name: "description",
-    content:
-      "Mathematics student building machine learning projects, AI systems, and data-driven web apps.",
-     },
+      { property: "og:title", content: "MYHB Portfolio" },
+      {
+        property: "og:description",
+        content: "AI, ML, optimization, and data science projects.",
+      },
+      { property: "og:type", content: "website" },
+    ],
 
-  { name: "author", content: "MYHB" },
-
-  // social sharing
-  { property: "og:title", content: "MYHB Portfolio" },
-  {
-    property: "og:description",
-    content: "AI, ML, optimization, and data science projects.",
-  },
-  { property: "og:type", content: "website" },
-],,
     links: [
       {
         rel: "icon",
         type: "image/png",
-        href: "/src/assets/artificial-intelligence.png",
+        href: "/artificial-intelligence.png",
       },
       {
         rel: "apple-touch-icon",
-        href: "/src/assets/artificial-intelligence.png",
+        href: "/artificial-intelligence.png",
       },
     ],
   }),
