@@ -42,11 +42,11 @@ export const Route = createFileRoute("/")({
       {
         rel: "icon",
         type: "image/png",
-        href: "./public/artificial-intelligence.png",
+        href: "/src/assets/artificial-intelligence.png",
       },
       {
         rel: "apple-touch-icon",
-        href: "./public/artificial-intelligence.png",
+        href: "/src/assets/artificial-intelligence.png",
       },
     ],
   }),
