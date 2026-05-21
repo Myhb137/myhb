@@ -21,11 +21,11 @@ export function Contact() {
 
           <div className="md:col-span-4 space-y-4">
             <a
-              href="mailto:hello@mhb.lab"
+              href="mailto:mohamedyahiabenaissa@gmail.com"
               className="block group rounded-xl border border-border p-5 hover:border-signal transition-colors"
             >
               <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">Email</div>
-              <div className="mt-1 text-lg">hello@mhb.lab</div>
+              <div className="mt-1 text-lg">mohamedyahiabenaissa@gmail.com</div>
             </a>
             <a
               href="https://github.com/myhb137"
@@ -37,13 +37,13 @@ export function Contact() {
               <div className="mt-1 text-lg">@myhb137</div>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/myhb137/"
               target="_blank"
               rel="noreferrer"
               className="block group rounded-xl border border-border p-5 hover:border-signal transition-colors"
             >
               <div className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">LinkedIn</div>
-              <div className="mt-1 text-lg">/in/hamza</div>
+              <div className="mt-1 text-lg">Mohamed Yahia Benaissa</div>
             </a>
           </div>
         </div>

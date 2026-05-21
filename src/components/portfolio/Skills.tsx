@@ -1,7 +1,7 @@
 const groups = [
   {
     title: "Data Science & ML",
-    items: ["Regression & Forecasting", "Classification / Clustering", "Feature Engineering", "Model Evaluation", "XGBoost · LightGBM", "PyTorch · TensorFlow"],
+    items: ["Regression & Forecasting", "Classification / Clustering", "Feature Engineering", "Model Evaluation", "XGBoost"],
   },
   {
     title: "Math & Optimization",
@@ -9,11 +9,11 @@ const groups = [
   },
   {
     title: "Tooling",
-    items: ["Python · Pandas · NumPy", "Scikit-learn", "SQL · PostgreSQL", "FastAPI · Streamlit", "Power BI · Tableau", "Git · Docker"],
+    items: ["Python · Pandas · NumPy", "Scikit-learn", "FastAPI", "Tableau", "Git"],
   },
   {
     title: "Web & Product",
-    items: ["React · TypeScript", "Next.js · Tailwind CSS", "Node.js · REST APIs", "Supabase · Firebase", "Figma · UI/UX", "Framer Motion"],
+    items: ["React", "Next.js · Tailwind CSS", "Supabase · Firebase", "Figma · UI/UX", "Framer Motion"],
   },
 ];
 

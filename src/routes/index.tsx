@@ -12,13 +12,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Hamza · mhb/lab — Data Scientist & ML Engineer" },
+      { title: "MYHB" },
       {
         name: "description",
         content:
-          "Portfolio of Hamza (myhb137) — Mathematics student building ML systems, forecasting models, and AI-powered web apps.",
+          "mohamed yahia benaissa (myhb137) — Mathematics student building ML systems, forecasting models, and AI-powered web apps.",
       },
-      { property: "og:title", content: "mhb/lab — Data Science Portfolio" },
+      { property: "og:title", content: "MYHB — Data Science Portfolio" },
       {
         property: "og:description",
         content:
