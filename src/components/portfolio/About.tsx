@@ -8,7 +8,7 @@ export function About() {
           <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-border bg-surface/30">
 
             <img
-              src="/public/myhb.png"
+              src="/myhb.png"
               alt="Yahia profile"
               className="w-full h-full object-cover"
             />
