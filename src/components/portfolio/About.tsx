@@ -37,22 +37,21 @@ export function About() {
           <div className="md:col-span-8 space-y-8">
 
             <p className="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight">
-              I treat data as a system. I shape it with mathematics, optimize it
-              with models, and ship it as tools that make decisions clearer.
-            </p>
+  I work with data to understand problems, build models, and turn them into
+  simple, usable tools.
+</p>
 
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
-              <p>
-                My background is mathematics — linear algebra, optimization, and
-                probability. I apply it to real systems: forecasting, AI assistants,
-                and data-driven products.
-              </p>
+<div className="space-y-6 text-muted-foreground leading-relaxed">
+  <p>
+    I’m studying mathematics, with focus on linear algebra, optimization, and
+    probability. I use it to work on forecasting, AI tools, and data-driven
+    projects.
+  </p>
 
-              <p>
-                I work across Python, machine learning, and web interfaces. From
-                data → model → product, I focus on building systems that actually
-                solve problems, not just notebooks.
-              </p>
+  <p>
+    I work with Python, machine learning, and web development. I like moving
+    from data to model to product in a way that stays practical and clear.
+  </p>
             </div>
 
           </div>

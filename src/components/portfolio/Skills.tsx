@@ -13,7 +13,7 @@ const groups = [
   },
   {
     title: "Web & Product",
-    items: ["React", "Next.js · Tailwind CSS", "Supabase · Firebase", "Figma · UI/UX", "Framer Motion"],
+    items: ["React · Tailwind CSS", "Firebase", "Figma · UI/UX", "Framer Motion"],
   },
 ];
 
