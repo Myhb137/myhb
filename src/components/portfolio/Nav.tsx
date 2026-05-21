@@ -9,7 +9,7 @@ export function Nav() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/60 border-b border-border">
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-14 flex items-center justify-between">
-        <a href="https://github.com/Myhb137" target="blank" className="flex items-center gap-2 font-mono text-sm tracking-tight">
+        <a href="#top" className="flex items-center gap-2 font-mono text-sm tracking-tight">
           <span className="inline-block w-2 h-2 rounded-full bg-signal animate-pulse" />
           <span className="font-semibold">mohamed yahia benaissa</span>
           <span className="text-muted-foreground">/MYHB137</span>
