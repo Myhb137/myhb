@@ -25,19 +25,24 @@ export const Route = createFileRoute("/")({
 
   head: () => ({
     meta: [
-      { title: "MYHB" },
-      {
-        name: "description",
-        content:
-          "mohamed yahia benaissa (myhb137) — Mathematics student building ML systems, forecasting models, and AI-powered web apps.",
-      },
-      { property: "og:title", content: "MYHB — Data Science Portfolio" },
-      {
-        property: "og:description",
-        content:
-          "Forecasting, ML, optimization, and AI web apps by a Mathematics student.",
-      },
-    ],
+        { title: "MYHB | Data Science Portfolio" },
+
+    {
+    name: "description",
+    content:
+      "Mathematics student building machine learning projects, AI systems, and data-driven web apps.",
+     },
+
+  { name: "author", content: "MYHB" },
+
+  // social sharing
+  { property: "og:title", content: "MYHB Portfolio" },
+  {
+    property: "og:description",
+    content: "AI, ML, optimization, and data science projects.",
+  },
+  { property: "og:type", content: "website" },
+],,
     links: [
       {
         rel: "icon",
