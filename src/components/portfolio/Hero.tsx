@@ -38,35 +38,49 @@ export function Hero() {
         <div className="reveal mt-14 grid md:grid-cols-12 gap-8 items-end">
 
           <p className="md:col-span-6 text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-            I'm <span className="text-foreground font-medium">Mohamed Yahia</span>, a Mathematics student
-            focused on data-driven systems, machine learning, and optimization.
-            I build ML models, AI assistants, and analytics tools that turn data into decisions.
+            I'm{" "}
+            <span className="text-foreground font-medium">
+              Mohamed Yahia
+            </span>
+            , a Mathematics student focused on data-driven systems,
+            machine learning, and optimization. I build ML models, AI
+            assistants, and analytics tools that turn data into decisions.
           </p>
 
           <div className="md:col-span-6 md:justify-self-end flex flex-col items-start md:items-end gap-4">
 
             <div className="flex gap-3 flex-wrap">
+
+              {/* PROJECTS */}
               <a
                 href="#work"
                 className="group inline-flex items-center gap-2 bg-signal text-primary-foreground px-5 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
               >
                 View projects
-                <span className="transition-transform group-hover:translate-x-1">→</span>
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
               </a>
 
+              {/* GITHUB */}
               <a
-                href="https://github.com/myhb137"
+                href="https://github.com/Myhb137"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-full text-sm font-medium hover:border-foreground transition"
               >
                 GitHub
+                <span>↗</span>
               </a>
 
+              {/* CONTACT */}
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 border border-border px-5 py-3 rounded-full text-sm font-medium hover:border-foreground transition"
               >
                 Contact
               </a>
+
             </div>
 
             <div className="font-mono text-xs text-muted-foreground">
@@ -80,13 +94,16 @@ export function Hero() {
         <div className="reveal mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-border pt-8">
 
           {[
-            ["4+", "Shipped projects"],
-            ["ML + DS", "Core focus"],
-            ["Mathematics", "Academic background"],
-            ["Optimization", "Specialty area"],
+            ["20K+", "Data points"],
+            ["99.25%", "R² achieved"],
+            ["XGBoost", "Primary ML stack"],
+            ["Mathematics", "Foundation"],
           ].map(([n, l]) => (
             <div key={l}>
-              <div className="font-display text-3xl md:text-4xl">{n}</div>
+              <div className="font-display text-3xl md:text-4xl">
+                {n}
+              </div>
+
               <div className="text-xs font-mono uppercase tracking-widest text-muted-foreground mt-1">
                 {l}
               </div>

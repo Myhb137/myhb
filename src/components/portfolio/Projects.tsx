@@ -1,16 +1,25 @@
 const projects = [
   {
     n: "01",
-    name: "Tourism ML Forecasting",
-    tag: "Machine Learning · Forecasting",
-    year: "2025",
+    name: "Productivity Prediction",
+    tag: "Machine Learning · Regression",
+    year: "2026",
     problem:
-      "Tourism operator decisions were based on intuition, leading to inefficient marketing spend and unstable revenue planning.",
+      "Student productivity is influenced by multiple behavioral and academic factors, making it difficult to estimate productivity from individual signals alone.",
     built:
-      "End-to-end ML pipeline forecasting revenue, bookings, and marketing efficiency using engineered temporal and campaign features. Applied gradient boosting models and SHAP for interpretability.",
-    tech: ["Python", "Pandas", "Scikit-learn", "XGBoost", "SHAP"],
+      "End-to-end ML pipeline trained on 20,000 student records using exploratory analysis, feature selection, model comparison, and XGBoost hyperparameter tuning. Deployed the trained model through a FastAPI prediction API.",
+    tech: [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "XGBoost",
+      "SHAP",
+      "FastAPI",
+    ],
     impact:
-      "Reduced prediction error (MAPE -12%) and identified inefficient ad channels responsible for ~30% of spend.",
+      "Final XGBoost model achieved R² = 99.25%, with MAE of 1.10 and RMSE of 1.39 on the test set.",
+    link: "https://github.com/Myhb137/Productivity-Prediction",
+    demo: "https://summit-score-ai.vercel.app/",
   },
 
   {
@@ -22,9 +31,10 @@ const projects = [
       "Users struggle to plan outings due to fragmented information across maps, reviews, and blogs.",
     built:
       "AI-powered assistant that recommends places and generates itineraries using structured data and LLM-based conversational interface.",
-    tech: ["React", "TypeScript", "Tailwind", "gemini"],
+    tech: ["React", "TypeScript", "Tailwind", "Gemini"],
     impact:
       "Built full product loop: data layer, AI reasoning system, and conversational UX.",
+    link: "https://github.com/Myhb137/Dz-Wejha",
   },
 
   {
@@ -39,20 +49,22 @@ const projects = [
     tech: ["React", "Dashboard Design", "UI/UX"],
     impact:
       "Improved offer management workflow and reduced manual operations complexity.",
+    link: "https://github.com/Myhb137/Yusr-Dashboard",
   },
 
   {
     n: "04",
-    name: "Trips Fi Bladi",
-    tag: "UI/UX Design System",
-    year: "2024",
+    name: "Tourism ML Forecasting",
+    tag: "Machine Learning · Forecasting",
+    year: "2025",
     problem:
-      "Need for a modern, local-first tourism identity avoiding generic travel platform design patterns.",
+      "Tourism operator decisions were based on intuition, leading to inefficient marketing spend and unstable revenue planning.",
     built:
-      "Complete UI/UX system including user flows, wireframes, and high-fidelity prototypes in Figma.",
-    tech: ["Figma", "UX Research", "Design Systems"],
+      "End-to-end ML pipeline forecasting revenue, bookings, and marketing efficiency using engineered temporal and campaign features. Applied gradient boosting models and SHAP for interpretability.",
+    tech: ["Python", "Pandas", "Scikit-learn", "XGBoost", "SHAP"],
     impact:
-      "Delivered production-ready design system used for MVP development.",
+      "Reduced prediction error (MAPE -12%) and identified inefficient ad channels responsible for ~30% of spend.",
+    link: "https://github.com/Myhb137/Multi-Service-Travel-Marketplace-Analytics-System",
   },
 
   {
@@ -67,12 +79,13 @@ const projects = [
     tech: ["Python", "NumPy", "Mathematical Optimization"],
     impact:
       "Strengthened understanding of optimization theory and ML training dynamics.",
+    link: "https://github.com/Myhb137/Gradiant-decent",
   },
 
   {
     n: "06",
     name: "Analytics Dashboards",
-    tag: "Data Analysis · Tableau",
+    tag: "Data Analysis · Automation",
     year: "2025",
     problem:
       "Business teams relied on slow, fragmented spreadsheet reporting.",
@@ -81,6 +94,22 @@ const projects = [
     tech: ["Python", "Pandas", "SQL", "Plotly", "Streamlit"],
     impact:
       "Reduced reporting time from hours to minutes through automation.",
+    link: "https://github.com/Myhb137/automation-EDA",
+  },
+
+  {
+    n: "07",
+    name: "Trips Fi Bladi",
+    tag: "UI/UX Design System",
+    year: "2024",
+    problem:
+      "Need for a modern, local-first tourism identity avoiding generic travel platform design patterns.",
+    built:
+      "Complete UI/UX system including user flows, wireframes, and high-fidelity prototypes in Figma.",
+    tech: ["Figma", "UX Research", "Design Systems"],
+    impact:
+      "Delivered production-ready design system used for MVP development.",
+    link: "https://github.com/Myhb137/Algeria-VR-tour",
   },
 ];
 
@@ -120,6 +149,7 @@ export function Projects() {
                 <div className="font-mono text-xs text-muted-foreground">
                   {p.n}
                 </div>
+
                 <div className="font-mono text-xs text-muted-foreground mt-1">
                   {p.year}
                 </div>
@@ -131,10 +161,39 @@ export function Projects() {
                   {p.tag}
                 </div>
 
+                {/* TITLE */}
                 <h3 className="font-display text-3xl md:text-4xl leading-tight tracking-tight">
                   {p.name}
                 </h3>
 
+                {/* LINKS */}
+                <div className="flex flex-wrap items-center gap-3 mt-5">
+
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-border font-mono text-xs uppercase tracking-widest text-foreground hover:bg-foreground hover:text-background transition-all duration-200"
+                  >
+                    GitHub
+                    <span className="text-sm">↗</span>
+                  </a>
+
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-foreground text-background font-mono text-xs uppercase tracking-widest hover:opacity-80 transition-opacity"
+                    >
+                      Live Demo
+                      <span className="text-sm">↗</span>
+                    </a>
+                  )}
+
+                </div>
+
+                {/* TECH */}
                 <div className="flex flex-wrap gap-1.5 mt-5">
                   {p.tech.map((t) => (
                     <span
@@ -150,29 +209,40 @@ export function Projects() {
               {/* RIGHT */}
               <div className="md:col-span-6 space-y-5 text-sm md:text-[15px] leading-relaxed">
 
+                {/* PROBLEM */}
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1.5">
                     Problem
                   </div>
-                  <p className="text-foreground/85">{p.problem}</p>
+
+                  <p className="text-foreground/85">
+                    {p.problem}
+                  </p>
                 </div>
 
+                {/* WHAT I BUILT */}
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1.5">
                     What I built
                   </div>
-                  <p className="text-foreground/85">{p.built}</p>
+
+                  <p className="text-foreground/85">
+                    {p.built}
+                  </p>
                 </div>
 
+                {/* OUTCOME */}
                 <div>
                   <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1.5">
                     Outcome
                   </div>
-                  <p className="text-signal">{p.impact}</p>
+
+                  <p className="text-signal">
+                    {p.impact}
+                  </p>
                 </div>
 
               </div>
-
             </article>
           ))}
         </div>
